@@ -1,41 +1,24 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<CodeBlocks_project_file>
-	<FileVersion major="1" minor="6" />
-	<Project>
-		<Option title="compound interest" />
-		<Option pch_mode="2" />
-		<Option compiler="gcc" />
-		<Build>
-			<Target title="Debug">
-				<Option output="bin/Debug/compound interest" prefix_auto="1" extension_auto="1" />
-				<Option object_output="obj/Debug/" />
-				<Option type="1" />
-				<Option compiler="gcc" />
-				<Compiler>
-					<Add option="-g" />
-				</Compiler>
-			</Target>
-			<Target title="Release">
-				<Option output="bin/Release/compound interest" prefix_auto="1" extension_auto="1" />
-				<Option object_output="obj/Release/" />
-				<Option type="1" />
-				<Option compiler="gcc" />
-				<Compiler>
-					<Add option="-O2" />
-				</Compiler>
-				<Linker>
-					<Add option="-s" />
-				</Linker>
-			</Target>
-		</Build>
-		<Compiler>
-			<Add option="-Wall" />
-		</Compiler>
-		<Unit filename="main.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Extensions>
-			<lib_finder disable_auto="1" />
-		</Extensions>
-	</Project>
-</CodeBlocks_project_file>
+//calculating the compound intrest
+/* calculating compound interest
+name: Purity Thuo
+date:24/9/24
+*/
+#include<stdio.h>
+int main(){
+double principle, time, rate;
+int years,frequency_compounded;
+printf("enter principal  (P):");
+scanf("%lf"& principle );
+printf("enter the duration(T):");
+scanf("%lf"&time);
+printf("enter the intrest rate (in percenage):");
+scanf("%lf"&rate);
+printf("enter the frequency compounded (n):");
+scanf("%d"&frequency_compounded);
+
+rate/=100
+amount={principle*(1+rate)^(n*T)}
+printf("the amount after %d years is:%lf",year,rate)
+
+return 0
+}
