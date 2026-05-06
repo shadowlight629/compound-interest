@@ -7,7 +7,7 @@ date:24/9/24
 int main(){
 double principle, time, rate;
 int years,frequency_compounded;
-printf("enter principal  (P):");
+printf("enter PRINCIPAL  (P):");
 scanf("%lf"& principle );
 printf("enter the duration(T):");
 scanf("%lf"&time);
